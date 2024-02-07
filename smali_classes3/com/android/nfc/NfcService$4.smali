@@ -54,23 +54,6 @@
 
     move-result v1
 
-    if-eqz v1, :cond_0
-
-    .line 4034
-    iget-object v1, p0, Lcom/android/nfc/NfcService$4;->this$0:Lcom/android/nfc/NfcService;
-
-    new-instance v2, Landroid/os/UserHandle;
-
-    .line 4035
-    invoke-virtual {p0}, Lcom/android/nfc/NfcService$4;->getSendingUserId()I
-
-    move-result v3
-
-    invoke-direct {v2, v3}, Landroid/os/UserHandle;-><init>(I)V
-
-    .line 4034
-    invoke-virtual {v1, p1, v2}, Lcom/android/nfc/NfcService;->enforceBeamShareActivityPolicy(Landroid/content/Context;Landroid/os/UserHandle;)V
-
     .line 4037
     :cond_0
     return-void
