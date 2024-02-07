@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accessibility_nfc_enabled">NFC ᏂᏚᏩᏂᎸᎢ</string>
+    <string name="action_confirm_url_open">ᎯᏍᏚᎢ ᎫᏓᎸᎢ</string>
+    <string name="aid_overflow_dialog_message">"Ꮎ ᎬᏙᏗ ᏂᎯ ᏚᏳᎪᏛᎢ ᏣᏘᏅᏔᏅ/ᎠᎵᏍᎪᎸᏓᏁᎯ ᎡᎵᏊ ᏂᎨᏒ ᎾᏛᏁᎲ NFC ᎤᎪᏗᏗ ᎢᏳᏍᏗ ᏯᏛᎾ.
+
+ ᎰᏩᏊ ᎠᏑᏰᏍᏗ Ꮎ ᏗᎬᏙᏗ ᏧᏚᎵᎲ ᎥᎣᎢ ᎡᎵᏊ ᏱᎬᏛᏁᏗ/ᎠᎴᏫᏍᏙᏗ.
+
+%1$s "</string>
+    <string name="aid_overflow_dialog_title">ᎭᏓᏯᏅᎯᏗᏍᏗ ᎠᏎᎸᎯ Ꮎ NFC ᎠᏅᏛᏁᎲ ᏥᏂᏕᎬᏅᏗᏓᏂ</string>
+    <string name="android_beam">Android Beam</string>
+    <string name="app_name">Nfc ᎢᏯᏓᏛᏁᏗ</string>
+    <string name="appchooser_description">ᎠᏑᏰᏍᏗ ᎬᏙᏗ ᎾᎢ ᎠᎾᎦᎵᏍᎩ ᎠᎪᎵᏰᏍᎩ</string>
+    <string name="ask_nfc_tap">ᎤᏟᏍᏓ ᎭᏐᏅᏍᏓ ᏄᏓᎴ ᏥᏂᎬᏅᏗᏓᎾ ᎾᎿᎢ ᎧᎵᎢ</string>
+    <string name="beam_busy">Beam ᏃᏊ ᏥᎩ ᏕᏣᎸᏫᏍᏓᏁ. ᏏᏊ ᏥᎭᏁᎸᏓ ᎢᏳᏃ ᏧᏩᎫᏔᏅ ᏙᏓᏰᏣᏲᎯᏎᎵ ᎧᎵᎢ.</string>
+    <string name="beam_canceled">ᎤᏃᏍᏛ ᎠᏓ ᎠᏎᏒᏓ</string>
+    <string name="beam_complete">Beam ᎧᎵᎢ</string>
+    <string name="beam_failed">Beam ᏄᏛᏁᎸ ᎥᏝ ᎧᎵᎢ</string>
+    <string name="beam_handover_not_supported">ᎦᏁᏍᏗ ᏥᏂᎬᏅᏗᏓᎾ ᏝᏍ ᏕᎦᎫᏍᏛᏁᎭ ᎤᏔᏂᏓ ᎠᏍᏆᏂᎪᏙᏗ ᏙᏓᏰᏣᏲᎯᏎᎵ ᎾᎿ ᎢᏗᏨ beam.</string>
+    <string name="beam_outgoing">Beaming...</string>
+    <string name="beam_progress">ᎦᎷᎦ beam...</string>
+    <string name="beam_requires_external_storage_permission">ᎠᏔᏲᏍᏙᏗ ᏞᏍᏗ ᏙᏯᏗᏜ ᎠᏍᏆᏂᎪᏙᏗ ᎠᏓᎵᏍᎪᎸᏓᏁᎯ. ᎯᎠ ᎠᏎᏯᏛᏁᏗ ᎾᎢ Beam ᎯᎠ ᎠᏍᏆᏂᎪᏙᏗ</string>
+    <string name="beam_requires_nfc_enabled">Android Beam ᎠᏎᏳᎾᏛᏁᏗ NFC ᎾᎿᎢ ᎬᏗ ᎡᎵᏊ ᏂᏚᏩᏂᎸᎢ. ᎿᏛᎦ ᏂᎯ ᎤᏚᎵᎭ ᎾᎿᎢ ᎡᎵᏊ ᎢᏳᎵᏍᏙᏗ ᎾᏍᎩ?</string>
+    <string name="beam_tap_to_view">ᎤᏟᏍᏓ ᎭᏐᏅᏍᏓ ᎾᎿᎢ ᏗᎧᏃᏗ</string>
+    <string name="beam_try_again">ᎠᏲᎯᏍᏗ ᏥᏂᏕᎬᏅᏗᏓᎾ ᎡᏧᎳᎭᎢ ᏏᏊ</string>
+    <string name="cancel">ᎠᏎᏒᏗ</string>
+    <string name="complete_with">ᎧᎵᎢ ᎬᏗ</string>
+    <string name="confirm_pairing">ᎨᏒᎢ ᏂᎯ ᎤᏙᎯᏳ ᏂᎯ ᎤᏚᎵᎭ ᎾᎿᎢ ᏗᎵᎪᏙᏗ Bluetooth ᏥᏂᎬᏅᏗᏓᎾ%1$s?</string>
+    <string name="connect_peripheral_failed">ᎤᏄᎸᏅᎢ ᎱᏓᎸᎥᎦ %1$s</string>
+    <string name="connected_peripheral">ᎫᏓᎸᏅᎯ %1$s</string>
+    <string name="connecting_peripheral">ᏓᎾᎵᎪᏗᏍᎬ %1$s</string>
+    <string name="could_not_use_app">ᎤᏄᎸᏅᎢ ᎬᏔᏂᏓᏍᏗ%1$s.</string>
+    <string name="default_pay_app_removed">ᏂᏨᎤᎢ ᎤᏟ ᎠᏰᎸᏅ ᎢᏯᏓᏛᏁᏗ ᎤᎬᏩᏟ ᎤᏟᏍᏓ ᎭᏐᏅᏍᏓ &amp; ᎤᎩᏍᏔᏘ ᎨᏎᎢ ᎠᎲᏍᏓ. ᏣᏑᏰᏍᏗ ᏄᏓᎴ?</string>
+    <string name="device">ᏥᏂᎬᏅᏗᏓᎾ</string>
+    <string name="disconnected_peripheral">"ᎱᏓᎳᏍᎬᎢ %1$s "</string>
+    <string name="disconnecting_peripheral">ᎱᏓᎳᏍᎬᎢ %1$s</string>
+    <string name="failed_to_enable_bt">ᎤᏄᎸᏅᎢ ᏂᏚᏩᏂᎸᎢ Bluetooth</string>
+    <string name="nfcUserLabel">Nfc</string>
+    <string name="nfc_blocking_alert_message">ᎤᏟᏍᏓ ᎭᏐᏅᏍᏓ ᎾᎿᎢ ᎠᏕᎶᏆᏍᏗ ᏰᎵ ᎾᎿᎢ ᎣᏍᏓ ᏱᏨᏁᏗ.</string>
+    <string name="nfc_blocking_alert_title">NFC ᎡᎵᏊ ᎦᏐᎭᎾᎳᏓ</string>
+    <string name="nfc_notice_summary">ᎯᎠ ᎠᏎ ᎠᏓᎵᏍᎪᎸᏓᏁᏗ ᎦᏘᏍᎩᏌᏅᎯ ᎦᏁᏟᏴᏓ ᎾᎯᏳ ᏂᎯ ᏱᏒᏂᎳ ᏅᏩᏓᎴᎢ NFC ᏥᏂᎬᏅᏗᏓᎾ. ᏙᏳᎢ ᏚᏳᎪᏛ ᎨᏎᏍᏗ ᏂᎯ ᏣᏛᎩ ᏃᎴ ᎦᏴᏓᏗᎨᏅᏗᏍᏗ ᎨᏒᎢ ᎤᏐᏯᏍᏗ ᎩᎶ ᏂᎯ ᏕᏍᏓᏓᏁᏟᏴᏍᎬᎢ ᎧᏃᎸᎥᏍᎩ ᎾᏍᎩ ᏰᎵᏉ ᎨᏎᏍᏗ ᏅᏛᏴᏍᏙᏗᎢ ᎾᎢ ᏦᎢᏁ ᏚᎾᏓᏟᏌᎲᎢ.</string>
+    <string name="nfc_terms_of_service_title">ᎢᎸᏨ NFC</string>
+    <string name="nfc_usr_confirm">ᎿᏛᎦ ᏂᎯ ᎤᏚᎵᎭ ᎾᎿᎢ ᏣᎮᏍᏗ NFC ᎠᎵᏍᎪᎸᏓᏁᎯ?</string>
+    <string name="notif_ch_desc">ᏗᎾᏓᏃᏣᎳᏁᎯ ᎬᏂᎨᏒ ᎤᎬᏩᏟ ᎢᎬᏱᏱ ᎠᏥᎢᎵᏒ ᏥᏂᎬᏅᏗᏓᎾ ᏄᏟᏂᎬᎬ ᎦᎸᎳᏗ ᎠᎾᏓᏎᎮᎲᎢ NFC ᏄᏍᏛ ᏂᏚᏩᏂᎸᎢ ᏃᎴ ᎠᏛᏅᎢᏍᏔᏅ</string>
+    <string name="notif_ch_name">NFC ᏗᎾᏓᏃᏣᎳᏁᎯ</string>
+    <string name="notif_text">ᎠᏑᏰᏍᏗ ᎾᎿᎢ ᏗᎧᏃᏗ NFC ᏗᏓᏁᏤᎸ ᎾᎿ ᎢᏯᏓᏛᏁᏗ.</string>
+    <string name="notif_text_available">ᎠᏑᏰᏍᏗ ᎾᎿᎢ ᎢᏳᎵᏍᏙᏗ NFC ᎠᎴ Android Beam.</string>
+    <string name="notif_title">NFC ᏂᏚᏩᏂᎸᎢ</string>
+    <string name="notif_title_available">NFC ᎠᏛᏅᎢᏍᏔᏅ</string>
+    <string name="pair_no">Ꮭ</string>
+    <string name="pair_yes">ᎥᎥ</string>
+    <string name="pairing_peripheral">ᏗᎵᎪᏙᏗ %1$s</string>
+    <string name="pairing_peripheral_failed">ᎤᏄᎸᏅᎢ ᏗᎵᎪᏙᏗ %1$s</string>
+    <string name="pay_with">ᎤᎩᏍᏔᏘ ᎬᏗ</string>
+    <string name="prompt_connect_to_network">ᎫᏓᎸᎢ ᎾᎿᎢ ᏧᎾᏚᏓᎵ%1$s?</string>
+    <string name="status_unable_to_connect">ᎤᏓᏄᎸᏅ ᎾᎿᎢ ᎱᏓᎸᎥᎦ ᎾᎿᎢ ᏧᎾᏚᏓᎵ</string>
+    <string name="status_wifi_connected">ᎫᏓᎸᏅᎯ</string>
+    <string name="summary_confirm_url_open">ᏂᏨᎤᎢ ᏗᏟᏃᎮᏗ ᎫᏓᎸᎢ ᎠᎦᏛᎴᏍᎩ NFC:</string>
+    <string name="tag_dispatch_failed">Ꮭ ᎤᏩᎫᏍᏓᎠ ᎬᏙᏗ ᎤᎬᏩᏟ ᎯᎠ NFC ᎦᏛ</string>
+    <string name="tag_read_error">NFC ᎠᎪᎵᏰᏗ ᏓᏓᎴᎬᎢ. ᏏᏊ ᏥᎭᏁᎸᏓ.</string>
+    <string name="tap_again_description">ᎯᏂᏯ ᎾᎢ ᎠᎪᎵᏰᏍᎩ</string>
+    <string name="tap_again_to_complete">ᎤᏟᏍᏓ ᎭᏐᏅᏍᏓ ᏏᏊ ᎾᎿᎢ ᎧᎵᎢ ᎬᏗ %1$s</string>
+    <string name="tap_again_to_pay">ᎤᏟᏍᏓ ᎭᏐᏅᏍᏓ ᏏᏊ ᎾᎿᎢ ᎤᎩᏍᏔᏘ ᎬᏗ %1$s</string>
+    <string name="tap_to_beam">ᎤᏟᏍᏓ ᎭᏐᏅᏍᏓ ᎾᎿᎢ ᎤᏃᏍᏛ ᎠᏓ</string>
+    <string name="title_confirm_url_open">ᎯᏍᏚᎢ ᎫᏓᎸᎢ?</string>
+    <string name="title_connect_to_network">ᎫᏓᎸᎢ ᎾᎿᎢ ᏧᎾᏚᏓᎵ</string>
+    <string name="transaction_failure">ᎢᏧᎳᎭ ᏚᏂᎸᏫᏍᏓᏁᎲ ᎤᏄᎸᏅᎢ ᎾᎿ ᏂᏚᎵᏍᏆᏛᎾ ᎬᏗ%1$s.</string>
+    <string name="wifi_connect">ᎫᏓᎸᎢ</string>
+</resources>

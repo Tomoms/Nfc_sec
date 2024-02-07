@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accessibility_nfc_enabled">NFC yumũdeka.</string>
+    <string name="action_confirm_url_open">Pirari link</string>
+    <string name="aid_overflow_dialog_message">"Apirikatiwo ki ĩdé remugatú'ana/ pukuaré'ana ĩti nũgarawara NFC kũtatuĩms irũ.
+
+E selesiunari apirikatiwo ki ĩdé reputari pukuaré/yuraré.
+
+%1$s "</string>
+    <string name="aid_overflow_dialog_title">Idé reatĩjiu murakisawa NFC ipuawa ne dispusitiwu upé</string>
+    <string name="android_beam">Android Beam</string>
+    <string name="app_name">Murakisawa NFC yara</string>
+    <string name="appchooser_description">E-parawaka yepé app lerisawa supé</string>
+    <string name="ask_nfc_tap">E-tukari amũ dispusitiwu pirí mupawa</string>
+    <string name="beam_busy">Beam uikú yukuai amũ ruê. E-saá amũ ruê mairamẽ mũdusawa kusiwara i pawãna.</string>
+    <string name="beam_canceled">Mũdusawa amunika</string>
+    <string name="beam_complete">Mũdusawa ipawãna.</string>
+    <string name="beam_failed">Mũdusawa ĩti ipawãna</string>
+    <string name="beam_handover_not_supported">Dispusitiwu resepitori ti usupurtari arkiwo mutirikasawa asú Android Beam rupí.</string>
+    <string name="beam_outgoing">Umũdú uikú</string>
+    <string name="beam_progress">Upurawaka uikú mũdusawa...</string>
+    <string name="beam_requires_external_storage_permission">Apirikatiwo ti urikú xiarisawa armasẽnasawa ukaripepura supé. Yawá i puraĩga pirí umũdú kuá arkiwo</string>
+    <string name="beam_requires_nfc_enabled">Android Beam umuputari ki NFCi pukuarewa. E-putairi repukuaré ae será?</string>
+    <string name="beam_tap_to_view">Tukari pirí maã</string>
+    <string name="beam_try_again">E-muatiri dispusitiwu-ita amũ ruẽ</string>
+    <string name="cancel">Muamunika</string>
+    <string name="complete_with">Mupawa… irũ</string>
+    <string name="confirm_pairing">Ne gustape ki reputari musuãti dispusitiwu yu Bluetooth %1$s será?</string>
+    <string name="connect_peripheral_failed">Ũbá puderi yumũdi %1$s</string>
+    <string name="connected_peripheral">%1$s yumũdiana</string>
+    <string name="connecting_peripheral">Uyumũdi uikú %1$s</string>
+    <string name="could_not_use_app">Ũba puderi usai %1$s.</string>
+    <string name="default_pay_app_removed">Ne murakisawa ãbariwa pirí tukari asuí murépi i mutirika. Purawaka amũ?</string>
+    <string name="device">dispusitiwu</string>
+    <string name="disconnected_peripheral">%1$s Yumĩdianaĩma</string>
+    <string name="disconnecting_peripheral">Umuéu uikú %1$s</string>
+    <string name="failed_to_enable_bt">Ũba puderi pukuaré Bluetooth</string>
+    <string name="nfcUserLabel">Nfc</string>
+    <string name="nfc_blocking_alert_message">E-tukari pirí yũbué piamũgitá puxima</string>
+    <string name="nfc_blocking_alert_title">NFC upuderi uikú musikĩdawa</string>
+    <string name="nfc_notice_summary">Yawá upudei kurí munhã dadu-ita rikuyara mairamẽ ĩdé retukari amũ dispusitiwo NFC upé. Remurekuyara yubẽusawa-ita ne purãgamuausawa mirá irũ, mãã resé ae upuderi amũetá resé.</string>
+    <string name="nfc_terms_of_service_title">NFC resewara</string>
+    <string name="nfc_usr_confirm">Reputari remãteri NFC pukuarewá?</string>
+    <string name="notif_ch_desc">Mbueusawa-ita imukamẽwa dispusitiwo yupirũgawa yepewara ruê rupí, tamukamẽ si NFC ipukuarewá uikú ã iyukuawa</string>
+    <string name="notif_ch_name">Mbeusawa-ita NFC yara</string>
+    <string name="notif_text">Retuká remaã arã Retukari pirí remaã Termu-ita Muraki NFC yara</string>
+    <string name="notif_text_available">Retukari pirí umuyuyukuau NFC asuí Android Beam.</string>
+    <string name="notif_title">NFC pukuarewá</string>
+    <string name="notif_title_available">NFC uyukuá</string>
+    <string name="pair_no">Ãã</string>
+    <string name="pair_yes">Ẽẽ</string>
+    <string name="pairing_peripheral">Umusuãti uikú %1$s</string>
+    <string name="pairing_peripheral_failed">Ũba puderi uyusuatĩ %1$s</string>
+    <string name="pay_with">Murépi… irũ</string>
+    <string name="prompt_connect_to_network">Yumũdi pusá %1$skití?</string>
+    <string name="status_unable_to_connect">"Ũbá upuderi uyukunekitari kuá pusá pe "</string>
+    <string name="status_wifi_connected">Yumũdiana</string>
+    <string name="summary_confirm_url_open">"Ne smartphone ukaripuãmu'ana yepé link NFC rupi"</string>
+    <string name="tag_dispatch_failed">Nẽyepé apirikatiwo i nũgarawara kuá etiketa NFC irũ</string>
+    <string name="tag_read_error">Yawisawa NFC lerisawa upé E-saá amũ ruê.</string>
+    <string name="tap_again_description">E-muruaki lerisara píri</string>
+    <string name="tap_again_to_complete">E-tukari amũ ruẽ pirí mupawa %1$s irũ</string>
+    <string name="tap_again_to_pay">E-tukari amũ ruẽ pirí murépi %1$s irũ</string>
+    <string name="tap_to_beam">Retuká remũdú arã</string>
+    <string name="title_confirm_url_open">Pirari link?</string>
+    <string name="title_connect_to_network">Yumũdi pusá kití</string>
+    <string name="transaction_failure">Ũba puderi mupawa umeẽ arãsasãu %1$s irũ</string>
+    <string name="wifi_connect">Yukunekitai</string>
+</resources>

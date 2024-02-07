@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/touch_outside" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_sheet" android:background="@drawable/nfc_background_outline" android:layout_width="fill_parent" android:layout_height="fill_parent" app:behavior_hideable="true" app:behavior_peekHeight="378.0dip" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+        <ImageView android:id="@id/screenshot" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginTop="24.0dip" android:layout_marginBottom="16.0dip" android:src="@drawable/nfc_icon" android:scaleType="fitCenter" android:maxWidth="32.0dip" android:maxHeight="32.0dip" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="?android:textColorPrimary" android:id="@id/appchooser_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip" android:text="@string/appchooser_description" android:textAlignment="center" />
+        <ListView android:layout_gravity="center" android:id="@id/resolver_list" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

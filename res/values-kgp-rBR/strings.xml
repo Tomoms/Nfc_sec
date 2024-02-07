@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accessibility_nfc_enabled">NFC ki han kỹ nỹ</string>
+    <string name="action_confirm_url_open">Rĩke róm</string>
+    <string name="aid_overflow_dialog_message">"Ã tỹ Rĩj fã tỹ kã sa ja pi NFC ki kroj mũ kãtatu tũ ra.
+
+Rĩj fã ag kuprẽg ra ã tỹ ki vin sór mũ ag.
+
+%1$s "</string>
+    <string name="aid_overflow_dialog_title">Ã vỹ NFC ki ti rãnhrãj tỹ krỹ kej ge jygrĩn ja nĩ ã tũ tỹ vin fã ag ki</string>
+    <string name="android_beam">Android Beam</string>
+    <string name="app_name">NFC tỹ rãnhrãj</string>
+    <string name="appchooser_description">App um kuprẽg ra to jãn jé</string>
+    <string name="ask_nfc_tap">Vin fã ũ vóg ra ã tỹ kãn jé</string>
+    <string name="beam_busy">Beam tỹ kutar nỹ ver tỹ ke mã vẽnhmỹ ra tĩn tỹ ki kro kar</string>
+    <string name="beam_canceled">Jãnãj ge tũ ser</string>
+    <string name="beam_complete">Jãnãj ge kãn ser</string>
+    <string name="beam_failed">Jãnãj ge kãn tũ</string>
+    <string name="beam_handover_not_supported">Vin fã ju nĩ pi arkivo mág ki há nỹ Android Beam mĩ ra tĩn ti.</string>
+    <string name="beam_outgoing">Jãnãg nĩ...</string>
+    <string name="beam_progress">Jãgnã ja vég nĩ...</string>
+    <string name="beam_requires_external_storage_permission">Rĩj fã pi mỹ hej ke kỹ nĩ ti krigmỹ nén ũ kar vin han jé. Tag tỹ ta kej ge nĩ ã tỹ arkivo tag jãnã jé</string>
+    <string name="beam_requires_nfc_enabled">Android Beam tỹ kore kej mũ NFC tỹ gru kỹ nỹj ke ti Mỹ tỹ gru kej</string>
+    <string name="beam_tap_to_view">Vóg ra ã tỹ ve jé</string>
+    <string name="beam_try_again">Vin fã tỹ jag mré vin mãn</string>
+    <string name="cancel">Tỹ krỹ kej ge</string>
+    <string name="complete_with">Tag to kãn</string>
+    <string name="confirm_pairing">Ã tỹ ke há mỹ Bluetooth %1$s tỹ jagnã mré sa jé?</string>
+    <string name="connect_peripheral_failed">Pi %1$s to saj ge ki kro mũ</string>
+    <string name="connected_peripheral">%1$s ra rã ka nĩ</string>
+    <string name="connecting_peripheral">%1$s Ra rã nĩ</string>
+    <string name="could_not_use_app">Pi %1$sti vóg ge ki kro mũ.</string>
+    <string name="default_pay_app_removed">Ã rãnhrãj tu há pẽ ã vóg jé mré kajãm jé tỹ nũnh ka nĩ. Ũ ta ũ kuprãg ge?</string>
+    <string name="device">vin fã</string>
+    <string name="disconnected_peripheral">%1$s to sa tũ</string>
+    <string name="disconnecting_peripheral">%1$s Ki kutẽ nĩ</string>
+    <string name="failed_to_enable_bt">Pi Bluetooth tỹ kã sa ki kro mũ</string>
+    <string name="nfcUserLabel">Nfc</string>
+    <string name="nfc_blocking_alert_message">Vóg ra ã ki nén ũ kórég vóg kinhrãg jé.</string>
+    <string name="nfc_blocking_alert_title">NFC tỹ haremũn nĩfénh kỹ nĩ</string>
+    <string name="nfc_notice_summary">Tag vỹ nanu vin mãn ki kroj mũ vin fã NFC ki vin sór ka. Ã tỹ ũn kinhra tỹvĩ mré to vãmén nĩ, mỹr ũ tỹ ũ ag vỹ ag tỹ ki ge jé há nĩ.</string>
+    <string name="nfc_terms_of_service_title">NFC to vĩ</string>
+    <string name="nfc_usr_confirm">Ã mỹ NFC tỹ kã sa han mũ?</string>
+    <string name="notif_ch_desc">Vinfã tỹ ra rã vén ãn ki vãmin mén ven geti tỹ ra rã jé, NFC tỹ kãsa ven jé</string>
+    <string name="notif_ch_name">NFC jykrĩg ja ẽn to rá jẽgnẽj ke</string>
+    <string name="notif_text">Vóg ra ã tỹ NFC ti rãnhrãj to vĩ ven jé</string>
+    <string name="notif_text_available">Vóg ra ã tỹ NFC kar Androd Beam tỹ kã saj ge</string>
+    <string name="notif_title">NFC róm kỹ nĩ</string>
+    <string name="notif_title_available">Disponível</string>
+    <string name="pair_no">Tũ nĩ</string>
+    <string name="pair_yes">Hỹ</string>
+    <string name="pairing_peripheral">Jagnã mré %1$s to sa</string>
+    <string name="pairing_peripheral_failed">Pi jagnã mré %1$s to sa ki kro mũ</string>
+    <string name="pay_with">Tỹ kajãm ge</string>
+    <string name="prompt_connect_to_network">Ti jógo %1$sto saj ge?</string>
+    <string name="status_unable_to_connect">Pi ti jógo ũ ki króm ke mũ</string>
+    <string name="status_wifi_connected">To sa ka nĩ</string>
+    <string name="summary_confirm_url_open">Ã smartphone tỹ rĩke NFC ki:</string>
+    <string name="tag_dispatch_failed">Rĩj fã ũ pi NFC ki kro nỹj ge há nĩ</string>
+    <string name="tag_read_error">NFC to jẽn ti kygnẽ. Han mãn sór ra.</string>
+    <string name="tap_again_description">Ti to jãn fã to hã ven ra</string>
+    <string name="tap_again_to_complete">Vóg mãn ra ã tỹ %1$s tỹkãn jé</string>
+    <string name="tap_again_to_pay">Vóg mãn ra ã tỹ %1$s tỹ kajam jé</string>
+    <string name="tap_to_beam">Ki vóg ti jẽnẽ jé</string>
+    <string name="title_confirm_url_open">Rĩke róm ge?</string>
+    <string name="title_connect_to_network">Jógo to saj ge</string>
+    <string name="transaction_failure">Pi ti kãn ki kro mũ %1$s tỹ jagnã mré ki han ti.</string>
+    <string name="wifi_connect">Ra rãg</string>
+</resources>

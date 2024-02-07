@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accessibility_nfc_enabled">एनएफसी सक्षम ए</string>
+    <string name="action_confirm_url_open">लिंक खोल्ला</string>
+    <string name="aid_overflow_dialog_message">"तोहां हुंण जेड़ी ऐप्लीकेशन इंस्टॉल/सक्षम कितिओ ए सै एन एफ सी संपर्क रहित लेंण देंण जो संम्हाली नी सकदी ए।
+
+कृपया तिनां एप्लिकेशनां जो चुंणां जिनां जो तोहां अक्षम करना चांदे हन्।
+
+%1$s "</string>
+    <string name="aid_overflow_dialog_title">तोहां अपणे उपकरणां पर एन एफ सी सेवां दी सीमा तिकर पूजी गयो हन्।</string>
+    <string name="android_beam">एंड्रॉइड बीम</string>
+    <string name="app_name">एनएफसी सेवा</string>
+    <string name="appchooser_description">स्कैन करणे तांए ऐप चुणां</string>
+    <string name="ask_nfc_tap">पूरा करणे तांए दूजा उपकरण चुणां</string>
+    <string name="beam_busy">बीम इस वेल्ला ब्यस्त ए पिछला स्थानांतरण पूरा ओणे पर भिरी : कोशिश करा</string>
+    <string name="beam_canceled">बीम रद्द कितियो गयी</string>
+    <string name="beam_complete">बीम पूरा होइया</string>
+    <string name="beam_failed">बीम पूरा ना होया</string>
+    <string name="beam_handover_not_supported">पाणे आले दा उपकरण बीम द्वारा बड्डी फाइलां नीं लई सकदा।</string>
+    <string name="beam_outgoing">बीम होआ दा ...</string>
+    <string name="beam_progress">बीम आ री ए</string>
+    <string name="beam_requires_external_storage_permission">एप्लिकेशन दे बला बाहरी संग्रहण अनुमति नी ए इसा फ़ाइला जो बीम करने ताएं ए आवश्यक ए</string>
+    <string name="beam_requires_nfc_enabled">एंड्रॉइड बीम ताएं एनएफ़सी का सक्षम ओणा आवश्यक ए क्या तुसां इसयो सक्षम करना चान्दे हन्न</string>
+    <string name="beam_tap_to_view">दिक्ख्णे ताएं दबन्या</string>
+    <string name="beam_try_again">उपकरणिस जो दबारा कन्ने लेओआ</string>
+    <string name="cancel">रद्द करा</string>
+    <string name="complete_with">कन्ने पूरा करा</string>
+    <string name="confirm_pairing">क्या तोहां सच्ची ब्लूटूथ उपकरणे %1$s जो जोड़ना चांदे हन्?</string>
+    <string name="connect_peripheral_failed">%1$s जो नी जोड़ी सके</string>
+    <string name="connected_peripheral">%1$s जुड़ी गया</string>
+    <string name="connecting_peripheral">%1$s जुड़ा दा</string>
+    <string name="could_not_use_app">इस्तेमाल नी करी सकदे %1$s.</string>
+    <string name="default_pay_app_removed">टैप करा कने भुगतान करणे ताएं तुसांदी पसंदीदा सेवा हटाई दित्ति थी दूजा चुणिए?</string>
+    <string name="device">उपकरण</string>
+    <string name="disconnected_peripheral">कनेक्शण खत्म करित्या %1$s</string>
+    <string name="disconnecting_peripheral">कनेक्शण खत्म करा दे हन् %1$s</string>
+    <string name="failed_to_enable_bt">ब्लूटूथ सक्षम नी करी सके</string>
+    <string name="nfcUserLabel">ऐन।ऐफ।सी</string>
+    <string name="nfc_blocking_alert_message">ठीक करणे दा तरीका जाणणे तांए टैप करा</string>
+    <string name="nfc_blocking_alert_title">एनएफसी ब्लॉक होई सकदा ए</string>
+    <string name="nfc_notice_summary">जालु तोहां कुसी होर एन एफ सी उपकरणे जो छुंदे हन् ता एह डेटा बंडणे दी अनुमति दिंगा। पक्का करा कि तोहां जाणदे हन् कने भरोसा करदे हन् कि तोहां कुस कन्ने जानकारिया बंडा दे हन् कैं जे एह तीजे पक्ष तांए पोंचणे लायक होई सकदा ए।</string>
+    <string name="nfc_terms_of_service_title">एनएफसी दे बारे च</string>
+    <string name="nfc_usr_confirm">क्या तोहां एनएफसी जो सक्षम रखणा चांदे हन?</string>
+    <string name="notif_ch_desc">पैली बरी उपकरण पावर अप तांए दस्सीयो गइयो सूचणा एह दर्शांदा है कि एन एफ सी सक्षम ए या उपलब्ध ए</string>
+    <string name="notif_ch_name">एनएफसी सूचनां</string>
+    <string name="notif_text">एनएफसी सेवा दी शर्तां दिखणे तांए चुणां।</string>
+    <string name="notif_text_available">एनएफसी कने एंड्रायड बीम सक्षम करणे तांए चुणा</string>
+    <string name="notif_title">एनएफसी सक्षम</string>
+    <string name="notif_title_available">एनएफसी उपलब्ध</string>
+    <string name="pair_no">नी/ना</string>
+    <string name="pair_yes">हां</string>
+    <string name="pairing_peripheral">%1$s जुड़ा दा</string>
+    <string name="pairing_peripheral_failed">नी जुड़ी पाया %1$s</string>
+    <string name="pay_with">कन्ने पैसे भरा</string>
+    <string name="prompt_connect_to_network">नेटवर्के ने जुड़ा %1$s?</string>
+    <string name="status_unable_to_connect">नेटवर्के ने नी जुड़ी सकादे</string>
+    <string name="status_wifi_connected">कनेक्ट होई गया</string>
+    <string name="summary_confirm_url_open">तुसांदे फ़ोना जो एनएफ़सी ते लिंक मिल्या:</string>
+    <string name="tag_dispatch_failed">इस एनएफसी टैगे तांए कोई सहायक ऐप नीं ए</string>
+    <string name="tag_read_error">एनएफ़सी पढ़ने दी गलती भिरी कोशिश करा</string>
+    <string name="tap_again_description">पढणे आले दी पकड़ ए</string>
+    <string name="tap_again_to_complete">%1$s कन्ने पूरा करणे तांए भिरी टैप करा</string>
+    <string name="tap_again_to_pay">%1$s ने पैसे भरणे तांए भारी टैप करा</string>
+    <string name="tap_to_beam">बीम तांए टैप करा</string>
+    <string name="title_confirm_url_open">लिंक खोल्ला?</string>
+    <string name="title_connect_to_network">नेटवर्के कन्ने कनेक्ट करा</string>
+    <string name="transaction_failure">ए भुगतान%1$s कन्ने पूरा नीं होया</string>
+    <string name="wifi_connect">जोड़ा</string>
+</resources>

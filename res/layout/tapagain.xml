@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:id="@id/tap_again_toolbar" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" />
+    <ImageView android:layout_gravity="center" android:id="@id/screenshot" android:background="@drawable/circle_shape" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginTop="24.0dip" android:layout_marginBottom="16.0dip" android:src="@drawable/nfc_icon" android:scaleType="centerInside" android:adjustViewBounds="true" android:maxWidth="56.0dip" android:maxHeight="56.0dip" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?android:textColorPrimary" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tap_again_description" android:textAlignment="center" />
+    <ImageView android:gravity="center" android:id="@id/tap_again_appicon" android:layout_width="fill_parent" android:layout_height="84.0dip" android:layout_marginTop="72.0dip" android:layout_centerHorizontal="true" />
+</LinearLayout>
