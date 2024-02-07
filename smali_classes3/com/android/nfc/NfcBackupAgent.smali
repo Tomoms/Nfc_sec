@@ -64,27 +64,6 @@
 
     move-result-object v1
 
-    .line 43
-    .local v1, "prefs":Landroid/content/SharedPreferences;
-    const/4 v2, 0x0
-
-    const-string v3, "ndef_push_on"
-
-    invoke-interface {v1, v3, v2}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    .line 45
-    invoke-virtual {v0}, Landroid/nfc/NfcAdapter;->enableNdefPush()Z
-
-    goto :goto_0
-
-    .line 47
-    :cond_0
-    invoke-virtual {v0}, Landroid/nfc/NfcAdapter;->disableNdefPush()Z
-
     .line 50
     :goto_0
     const/4 v2, 0x1
