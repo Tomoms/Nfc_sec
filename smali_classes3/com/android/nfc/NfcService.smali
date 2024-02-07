@@ -62,8 +62,6 @@
 
 .field static final INVALID_NATIVE_HANDLE:I = -0x1
 
-.field static final INVOKE_BEAM_DELAY_MS:I = 0x3e8
-
 .field static final MAX_POLLING_PAUSE_TIMEOUT:J = 0x9c40L
 
 .field static final MAX_TOAST_DEBOUNCE_TIME:I = 0x2710
@@ -75,14 +73,6 @@
 .field static final MSG_DELAY_POLLING:I = 0x14
 
 .field static final MSG_DEREGISTER_T3T_IDENTIFIER:I = 0xd
-
-.field static final MSG_INVOKE_BEAM:I = 0x8
-
-.field static final MSG_LLCP_LINK_ACTIVATION:I = 0x1
-
-.field static final MSG_LLCP_LINK_DEACTIVATED:I = 0x2
-
-.field static final MSG_LLCP_LINK_FIRST_PACKET:I = 0x4
 
 .field static final MSG_MOCK_NDEF:I = 0x3
 
@@ -121,8 +111,6 @@
 .field public static final NCI_VERSION_1_0:I = 0x10
 
 .field public static final NCI_VERSION_2_0:I = 0x20
-
-.field static final NDEF_PUSH_ON_DEFAULT:Z = false
 
 .field public static final NFCEE_DEVICE_HOST_ID:I = 0x0
 
@@ -164,11 +152,7 @@
 
 .field static final PREF_ANTENNA_BLOCKED_MESSAGE_SHOWN:Ljava/lang/String; = "antenna_blocked_message_shown"
 
-.field static final PREF_FIRST_BEAM:Ljava/lang/String; = "first_beam"
-
 .field static final PREF_FIRST_BOOT:Ljava/lang/String; = "first_boot"
-
-.field static final PREF_NDEF_PUSH_ON:Ljava/lang/String; = "ndef_push_on"
 
 .field static final PREF_NFC_ON:Ljava/lang/String; = "nfc_on"
 
@@ -318,15 +302,11 @@
 
 .field private final mIsAlwaysOnSupported:Z
 
-.field mIsBeamCapable:Z
-
 .field mIsDebugBuild:Z
 
 .field mIsHceCapable:Z
 
 .field mIsHceFCapable:Z
-
-.field mIsNdefPushEnabled:Z
 
 .field mIsRecovering:Z
 
@@ -402,8 +382,6 @@
 .end field
 
 .field private final mOwnerReceiver:Landroid/content/BroadcastReceiver;
-
-.field mP2pLinkManager:Lcom/android/nfc/P2pLinkManager;
 
 .field private final mPolicyReceiver:Landroid/content/BroadcastReceiver;
 
@@ -1601,33 +1579,6 @@
 
     invoke-virtual/range {v15 .. v20}, Landroid/content/Context;->registerReceiverAsUser(Landroid/content/BroadcastReceiver;Landroid/os/UserHandle;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
 
-    .line 685
-    new-instance v0, Landroid/content/IntentFilter;
-
-    const-string v9, "android.app.action.DEVICE_POLICY_MANAGER_STATE_CHANGED"
-
-    invoke-direct {v0, v9}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
-
-    move-object/from16 v24, v0
-
-    .line 686
-    .local v24, "policyFilter":Landroid/content/IntentFilter;
-    iget-object v0, v1, Lcom/android/nfc/NfcService;->mContext:Landroid/content/Context;
-
-    iget-object v9, v1, Lcom/android/nfc/NfcService;->mPolicyReceiver:Landroid/content/BroadcastReceiver;
-
-    sget-object v23, Landroid/os/UserHandle;->ALL:Landroid/os/UserHandle;
-
-    const/16 v25, 0x0
-
-    const/16 v26, 0x0
-
-    move-object/from16 v21, v0
-
-    move-object/from16 v22, v9
-
-    invoke-virtual/range {v21 .. v26}, Landroid/content/Context;->registerReceiverAsUser(Landroid/content/BroadcastReceiver;Landroid/os/UserHandle;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
-
     .line 688
     invoke-virtual/range {p0 .. p0}, Lcom/android/nfc/NfcService;->updatePackageCache()V
 
@@ -1637,84 +1588,6 @@
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v9
-
-    .line 691
-    .local v9, "pm":Landroid/content/pm/PackageManager;
-    const-string v0, "android.sofware.nfc.beam"
-
-    invoke-virtual {v9, v0}, Landroid/content/pm/PackageManager;->hasSystemFeature(Ljava/lang/String;)Z
-
-    move-result v0
-
-    iput-boolean v0, v1, Lcom/android/nfc/NfcService;->mIsBeamCapable:Z
-
-    .line 692
-    iget-object v0, v1, Lcom/android/nfc/NfcService;->mPrefs:Landroid/content/SharedPreferences;
-
-    .line 693
-    const-string v10, "ndef_push_on"
-
-    invoke-interface {v0, v10, v3}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_4
-
-    iget-boolean v0, v1, Lcom/android/nfc/NfcService;->mIsBeamCapable:Z
-
-    if-eqz v0, :cond_4
-
-    move v0, v6
-
-    goto :goto_5
-
-    :cond_4
-    move v0, v3
-
-    :goto_5
-    iput-boolean v0, v1, Lcom/android/nfc/NfcService;->mIsNdefPushEnabled:Z
-
-    .line 696
-    iget-boolean v0, v1, Lcom/android/nfc/NfcService;->mIsBeamCapable:Z
-
-    if-eqz v0, :cond_5
-
-    .line 697
-    new-instance v0, Lcom/android/nfc/P2pLinkManager;
-
-    iget-object v10, v1, Lcom/android/nfc/NfcService;->mContext:Landroid/content/Context;
-
-    iget-object v11, v1, Lcom/android/nfc/NfcService;->mHandoverDataParser:Lcom/android/nfc/handover/HandoverDataParser;
-
-    iget-object v12, v1, Lcom/android/nfc/NfcService;->mDeviceHost:Lcom/android/nfc/DeviceHost;
-
-    .line 698
-    invoke-interface {v12}, Lcom/android/nfc/DeviceHost;->getDefaultLlcpMiu()I
-
-    move-result v12
-
-    iget-object v13, v1, Lcom/android/nfc/NfcService;->mDeviceHost:Lcom/android/nfc/DeviceHost;
-
-    .line 699
-    invoke-interface {v13}, Lcom/android/nfc/DeviceHost;->getDefaultLlcpRwSize()I
-
-    move-result v13
-
-    invoke-direct {v0, v10, v11, v12, v13}, Lcom/android/nfc/P2pLinkManager;-><init>(Landroid/content/Context;Lcom/android/nfc/handover/HandoverDataParser;II)V
-
-    iput-object v0, v1, Lcom/android/nfc/NfcService;->mP2pLinkManager:Lcom/android/nfc/P2pLinkManager;
-
-    .line 701
-    :cond_5
-    iget-object v0, v1, Lcom/android/nfc/NfcService;->mContext:Landroid/content/Context;
-
-    new-instance v10, Landroid/os/UserHandle;
-
-    iget v11, v1, Lcom/android/nfc/NfcService;->mUserId:I
-
-    invoke-direct {v10, v11}, Landroid/os/UserHandle;-><init>(I)V
-
-    invoke-virtual {v1, v0, v10}, Lcom/android/nfc/NfcService;->enforceBeamShareActivityPolicy(Landroid/content/Context;Landroid/os/UserHandle;)V
 
     .line 703
     nop
@@ -2277,11 +2150,6 @@
     :cond_6
     invoke-virtual {v0, v1}, Lcom/android/nfc/NfcDiscoveryParameters$Builder;->setTechMask(I)Lcom/android/nfc/NfcDiscoveryParameters$Builder;
 
-    .line 2729
-    iget-boolean v1, p0, Lcom/android/nfc/NfcService;->mIsBeamCapable:Z
-
-    invoke-virtual {v0, v1}, Lcom/android/nfc/NfcDiscoveryParameters$Builder;->setEnableP2p(Z)Lcom/android/nfc/NfcDiscoveryParameters$Builder;
-
     goto :goto_0
 
     .line 2731
@@ -2294,11 +2162,6 @@
 
     .line 2732
     invoke-virtual {v0, v1}, Lcom/android/nfc/NfcDiscoveryParameters$Builder;->setTechMask(I)Lcom/android/nfc/NfcDiscoveryParameters$Builder;
-
-    .line 2734
-    iget-boolean v1, p0, Lcom/android/nfc/NfcService;->mIsBeamCapable:Z
-
-    invoke-virtual {v0, v1}, Lcom/android/nfc/NfcDiscoveryParameters$Builder;->setEnableP2p(Z)Lcom/android/nfc/NfcDiscoveryParameters$Builder;
 
     goto :goto_0
 
@@ -2345,9 +2208,6 @@
     const/4 v2, 0x0
 
     invoke-virtual {v0, v2}, Lcom/android/nfc/NfcDiscoveryParameters$Builder;->setEnableLowPowerDiscovery(Z)Lcom/android/nfc/NfcDiscoveryParameters$Builder;
-
-    .line 2742
-    invoke-virtual {v0, v2}, Lcom/android/nfc/NfcDiscoveryParameters$Builder;->setEnableP2p(Z)Lcom/android/nfc/NfcDiscoveryParameters$Builder;
 
     .line 2748
     .end local v1    # "techMask":I
@@ -2514,8 +2374,7 @@
 
     invoke-virtual {p1, v1, v2, v0}, Landroid/util/proto/ProtoOutputStream;->write(JZ)V
 
-    .line 4223
-    iget-boolean v0, p0, Lcom/android/nfc/NfcService;->mIsNdefPushEnabled:Z
+    const/4 v0, 0x0
 
     const-wide v1, 0x10800000003L
 
@@ -2595,8 +2454,7 @@
 
     invoke-virtual {p1, v1, v2, v0}, Landroid/util/proto/ProtoOutputStream;->write(JZ)V
 
-    .line 4233
-    iget-boolean v0, p0, Lcom/android/nfc/NfcService;->mIsBeamCapable:Z
+    const/4 v0, 0x0
 
     const-wide v1, 0x1080000000cL
 
@@ -2632,25 +2490,7 @@
     .line 4239
     invoke-virtual {p1, v0, v1}, Landroid/util/proto/ProtoOutputStream;->end(J)V
 
-    .line 4241
-    iget-boolean v2, p0, Lcom/android/nfc/NfcService;->mIsBeamCapable:Z
-
-    if-eqz v2, :cond_0
-
-    .line 4242
-    const-wide v2, 0x10b00000010L
-
-    invoke-virtual {p1, v2, v3}, Landroid/util/proto/ProtoOutputStream;->start(J)J
-
-    move-result-wide v0
-
-    .line 4243
-    iget-object v2, p0, Lcom/android/nfc/NfcService;->mP2pLinkManager:Lcom/android/nfc/P2pLinkManager;
-
-    invoke-virtual {v2, p1}, Lcom/android/nfc/P2pLinkManager;->dumpDebug(Landroid/util/proto/ProtoOutputStream;)V
-
-    .line 4244
-    invoke-virtual {p1, v0, v1}, Landroid/util/proto/ProtoOutputStream;->end(J)V
+    const/4 v2, 0x0
 
     .line 4247
     :cond_0
@@ -4240,7 +4080,7 @@
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lcom/android/nfc/NfcService;->mIsNdefPushEnabled:Z
+    const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -4330,15 +4170,7 @@
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/Object;)V
 
-    .line 4188
-    iget-boolean v0, p0, Lcom/android/nfc/NfcService;->mIsBeamCapable:Z
-
-    if-eqz v0, :cond_5
-
-    .line 4189
-    iget-object v0, p0, Lcom/android/nfc/NfcService;->mP2pLinkManager:Lcom/android/nfc/P2pLinkManager;
-
-    invoke-virtual {v0, p1, p2, p3}, Lcom/android/nfc/P2pLinkManager;->dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
+    const/4 v0, 0x0
 
     .line 4191
     :cond_5
@@ -4419,189 +4251,6 @@
     .catchall {:try_start_9 .. :try_end_9} :catchall_2
 
     throw v0
-.end method
-
-.method enforceBeamShareActivityPolicy(Landroid/content/Context;Landroid/os/UserHandle;)V
-    .locals 9
-    .param p1, "context"    # Landroid/content/Context;
-    .param p2, "uh"    # Landroid/os/UserHandle;
-
-    .line 1438
-    const-string v0, "user"
-
-    invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/os/UserManager;
-
-    .line 1439
-    .local v0, "um":Landroid/os/UserManager;
-    const-string v1, "package"
-
-    invoke-static {v1}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroid/content/pm/IPackageManager$Stub;->asInterface(Landroid/os/IBinder;)Landroid/content/pm/IPackageManager;
-
-    move-result-object v1
-
-    .line 1440
-    .local v1, "mIpm":Landroid/content/pm/IPackageManager;
-    iget-boolean v2, p0, Lcom/android/nfc/NfcService;->mIsNdefPushEnabled:Z
-
-    .line 1441
-    .local v2, "isGlobalEnabled":Z
-    nop
-
-    .line 1442
-    const-string v3, "no_outgoing_beam"
-
-    invoke-virtual {v0, v3, p2}, Landroid/os/UserManager;->hasUserRestriction(Ljava/lang/String;Landroid/os/UserHandle;)Z
-
-    move-result v3
-
-    const/4 v4, 0x1
-
-    if-nez v3, :cond_0
-
-    if-eqz v2, :cond_0
-
-    iget-boolean v3, p0, Lcom/android/nfc/NfcService;->mIsBeamCapable:Z
-
-    if-eqz v3, :cond_0
-
-    move v3, v4
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v3, 0x0
-
-    .line 1444
-    .local v3, "isActiveForUser":Z
-    :goto_0
-    sget-boolean v5, Lcom/android/nfc/NfcService;->DBG:Z
-
-    const-string v6, "NfcService"
-
-    if-eqz v5, :cond_1
-
-    .line 1445
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v7, "Enforcing a policy change on user: "
-
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    invoke-virtual {p2}, Landroid/os/UserHandle;->toString()Ljava/lang/String;
-
-    move-result-object v7
-
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    const-string v7, ", isActiveForUser = "
-
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-static {v6, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 1449
-    :cond_1
-    :try_start_0
-    new-instance v5, Landroid/content/ComponentName;
-
-    const-class v7, Lcom/android/nfc/BeamShareActivity;
-
-    .line 1450
-    invoke-virtual {v7}, Ljava/lang/Class;->getPackageName()Ljava/lang/String;
-
-    move-result-object v7
-
-    const-class v8, Lcom/android/nfc/BeamShareActivity;
-
-    .line 1451
-    invoke-virtual {v8}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-direct {v5, v7, v8}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 1452
-    if-eqz v3, :cond_2
-
-    .line 1453
-    move v7, v4
-
-    goto :goto_1
-
-    .line 1454
-    :cond_2
-    const/4 v7, 0x2
-
-    :goto_1
-    nop
-
-    .line 1456
-    invoke-virtual {p2}, Landroid/os/UserHandle;->getIdentifier()I
-
-    move-result v8
-
-    .line 1449
-    invoke-interface {v1, v5, v7, v4, v8}, Landroid/content/pm/IPackageManager;->setComponentEnabledSetting(Landroid/content/ComponentName;III)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 1459
-    goto :goto_2
-
-    .line 1457
-    :catch_0
-    move-exception v4
-
-    .line 1458
-    .local v4, "e":Landroid/os/RemoteException;
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v7, "Unable to change Beam status for user "
-
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    invoke-virtual {v5, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-static {v6, v5}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 1460
-    .end local v4    # "e":Landroid/os/RemoteException;
-    :goto_2
-    return-void
 .end method
 
 .method findAndRemoveObject(I)Ljava/lang/Object;
@@ -5775,25 +5424,6 @@
     .locals 1
     .param p1, "device"    # Lcom/android/nfc/DeviceHost$NfcDepEndpoint;
 
-    .line 512
-    iget-boolean v0, p0, Lcom/android/nfc/NfcService;->mIsBeamCapable:Z
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    .line 513
-    :cond_0
-    iget-object v0, p0, Lcom/android/nfc/NfcService;->mNumP2pDetected:Ljava/util/concurrent/atomic/AtomicInteger;
-
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->incrementAndGet()I
-
-    .line 514
-    const/4 v0, 0x4
-
-    invoke-virtual {p0, v0, p1}, Lcom/android/nfc/NfcService;->sendMessage(ILjava/lang/Object;)V
-
-    .line 515
     return-void
 .end method
 
@@ -5801,41 +5431,6 @@
     .locals 1
     .param p1, "device"    # Lcom/android/nfc/DeviceHost$NfcDepEndpoint;
 
-    .line 494
-    iget-boolean v0, p0, Lcom/android/nfc/NfcService;->mIsBeamCapable:Z
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    .line 495
-    :cond_0
-    const/4 v0, 0x1
-
-    invoke-virtual {p0, v0, p1}, Lcom/android/nfc/NfcService;->sendMessage(ILjava/lang/Object;)V
-
-    .line 496
-    return-void
-.end method
-
-.method public onLlcpLinkDeactivated(Lcom/android/nfc/DeviceHost$NfcDepEndpoint;)V
-    .locals 1
-    .param p1, "device"    # Lcom/android/nfc/DeviceHost$NfcDepEndpoint;
-
-    .line 503
-    iget-boolean v0, p0, Lcom/android/nfc/NfcService;->mIsBeamCapable:Z
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    .line 504
-    :cond_0
-    const/4 v0, 0x2
-
-    invoke-virtual {p0, v0, p1}, Lcom/android/nfc/NfcService;->sendMessage(ILjava/lang/Object;)V
-
-    .line 505
     return-void
 .end method
 
