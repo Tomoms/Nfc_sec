@@ -2150,6 +2150,11 @@
     :cond_6
     invoke-virtual {v0, v1}, Lcom/android/nfc/NfcDiscoveryParameters$Builder;->setTechMask(I)Lcom/android/nfc/NfcDiscoveryParameters$Builder;
 
+    .line 2729
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lcom/android/nfc/NfcDiscoveryParameters$Builder;->setEnableP2p(Z)Lcom/android/nfc/NfcDiscoveryParameters$Builder;
+
     goto :goto_0
 
     .line 2731
@@ -2162,6 +2167,12 @@
 
     .line 2732
     invoke-virtual {v0, v1}, Lcom/android/nfc/NfcDiscoveryParameters$Builder;->setTechMask(I)Lcom/android/nfc/NfcDiscoveryParameters$Builder;
+
+    .line 2729
+    # not needed?
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lcom/android/nfc/NfcDiscoveryParameters$Builder;->setEnableP2p(Z)Lcom/android/nfc/NfcDiscoveryParameters$Builder;
 
     goto :goto_0
 
@@ -2208,6 +2219,9 @@
     const/4 v2, 0x0
 
     invoke-virtual {v0, v2}, Lcom/android/nfc/NfcDiscoveryParameters$Builder;->setEnableLowPowerDiscovery(Z)Lcom/android/nfc/NfcDiscoveryParameters$Builder;
+
+    .line 2742
+    invoke-virtual {v0, v2}, Lcom/android/nfc/NfcDiscoveryParameters$Builder;->setEnableP2p(Z)Lcom/android/nfc/NfcDiscoveryParameters$Builder;
 
     .line 2748
     .end local v1    # "techMask":I
