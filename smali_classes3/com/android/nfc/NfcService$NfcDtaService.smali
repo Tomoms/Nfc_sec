@@ -41,31 +41,6 @@
         }
     .end annotation
 
-    .line 2567
-    iget-object v0, p0, Lcom/android/nfc/NfcService$NfcDtaService;->this$0:Lcom/android/nfc/NfcService;
-
-    iget-boolean v0, v0, Lcom/android/nfc/NfcService;->mIsBeamCapable:Z
-
-    if-nez v0, :cond_0
-
-    .line 2568
-    return-void
-
-    .line 2569
-    :cond_0
-    iget-object v0, p0, Lcom/android/nfc/NfcService$NfcDtaService;->this$0:Lcom/android/nfc/NfcService;
-
-    iget-object v0, v0, Lcom/android/nfc/NfcService;->mContext:Landroid/content/Context;
-
-    invoke-static {v0}, Lcom/android/nfc/NfcPermissions;->enforceAdminPermissions(Landroid/content/Context;)V
-
-    .line 2570
-    iget-object v0, p0, Lcom/android/nfc/NfcService$NfcDtaService;->this$0:Lcom/android/nfc/NfcService;
-
-    iget-object v0, v0, Lcom/android/nfc/NfcService;->mP2pLinkManager:Lcom/android/nfc/P2pLinkManager;
-
-    invoke-virtual {v0}, Lcom/android/nfc/P2pLinkManager;->disableDtaSnepClient()V
-
     .line 2571
     return-void
 .end method
@@ -117,31 +92,6 @@
         }
     .end annotation
 
-    .line 2542
-    iget-object v0, p0, Lcom/android/nfc/NfcService$NfcDtaService;->this$0:Lcom/android/nfc/NfcService;
-
-    iget-boolean v0, v0, Lcom/android/nfc/NfcService;->mIsBeamCapable:Z
-
-    if-nez v0, :cond_0
-
-    .line 2543
-    return-void
-
-    .line 2544
-    :cond_0
-    iget-object v0, p0, Lcom/android/nfc/NfcService$NfcDtaService;->this$0:Lcom/android/nfc/NfcService;
-
-    iget-object v0, v0, Lcom/android/nfc/NfcService;->mContext:Landroid/content/Context;
-
-    invoke-static {v0}, Lcom/android/nfc/NfcPermissions;->enforceAdminPermissions(Landroid/content/Context;)V
-
-    .line 2545
-    iget-object v0, p0, Lcom/android/nfc/NfcService$NfcDtaService;->this$0:Lcom/android/nfc/NfcService;
-
-    iget-object v0, v0, Lcom/android/nfc/NfcService;->mP2pLinkManager:Lcom/android/nfc/P2pLinkManager;
-
-    invoke-virtual {v0}, Lcom/android/nfc/P2pLinkManager;->disableExtDtaSnepServer()V
-
     .line 2546
     return-void
 .end method
@@ -167,70 +117,6 @@
 
     .line 2552
     const/4 v0, 0x0
-
-    if-eqz p4, :cond_2
-
-    iget-object v1, p0, Lcom/android/nfc/NfcService$NfcDtaService;->this$0:Lcom/android/nfc/NfcService;
-
-    iget-boolean v1, v1, Lcom/android/nfc/NfcService;->mIsBeamCapable:Z
-
-    if-nez v1, :cond_0
-
-    goto :goto_1
-
-    .line 2555
-    :cond_0
-    const/4 v1, 0x1
-
-    const/16 v2, 0x14
-
-    if-le p4, v2, :cond_1
-
-    .line 2556
-    sput-boolean v1, Lcom/android/nfc/NfcService;->sIsShortRecordLayout:Z
-
-    .line 2557
-    add-int/lit8 p4, p4, -0x14
-
-    goto :goto_0
-
-    .line 2559
-    :cond_1
-    sput-boolean v0, Lcom/android/nfc/NfcService;->sIsShortRecordLayout:Z
-
-    .line 2561
-    :goto_0
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, ""
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v2, "testCaseId"
-
-    invoke-static {v2, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 2562
-    iget-object v0, p0, Lcom/android/nfc/NfcService$NfcDtaService;->this$0:Lcom/android/nfc/NfcService;
-
-    iget-object v0, v0, Lcom/android/nfc/NfcService;->mP2pLinkManager:Lcom/android/nfc/P2pLinkManager;
-
-    invoke-virtual {v0, p1, p2, p3, p4}, Lcom/android/nfc/P2pLinkManager;->enableDtaSnepClient(Ljava/lang/String;III)V
-
-    .line 2563
-    return v1
 
     .line 2553
     :cond_2
@@ -303,40 +189,6 @@
     iget-object v0, v0, Lcom/android/nfc/NfcService;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/android/nfc/NfcPermissions;->enforceAdminPermissions(Landroid/content/Context;)V
-
-    .line 2534
-    if-eqz p1, :cond_1
-
-    iget-object v0, p0, Lcom/android/nfc/NfcService$NfcDtaService;->this$0:Lcom/android/nfc/NfcService;
-
-    iget-boolean v0, v0, Lcom/android/nfc/NfcService;->mIsBeamCapable:Z
-
-    if-nez v0, :cond_0
-
-    goto :goto_0
-
-    .line 2537
-    :cond_0
-    iget-object v0, p0, Lcom/android/nfc/NfcService$NfcDtaService;->this$0:Lcom/android/nfc/NfcService;
-
-    iget-object v1, v0, Lcom/android/nfc/NfcService;->mP2pLinkManager:Lcom/android/nfc/P2pLinkManager;
-
-    move-object v2, p1
-
-    move v3, p2
-
-    move v4, p3
-
-    move v5, p4
-
-    move v6, p5
-
-    invoke-virtual/range {v1 .. v6}, Lcom/android/nfc/P2pLinkManager;->enableExtDtaSnepServer(Ljava/lang/String;IIII)V
-
-    .line 2538
-    const/4 v0, 0x1
-
-    return v0
 
     .line 2535
     :cond_1
