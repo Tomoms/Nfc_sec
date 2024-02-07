@@ -323,20 +323,6 @@
 
     .line 1231
     :cond_1
-    iget-object v3, p0, Lcom/android/nfc/NfcService$EnableDisableTask;->this$0:Lcom/android/nfc/NfcService;
-
-    iget-boolean v3, v3, Lcom/android/nfc/NfcService;->mIsBeamCapable:Z
-
-    const/4 v4, 0x0
-
-    if-eqz v3, :cond_2
-
-    .line 1232
-    iget-object v3, p0, Lcom/android/nfc/NfcService$EnableDisableTask;->this$0:Lcom/android/nfc/NfcService;
-
-    iget-object v3, v3, Lcom/android/nfc/NfcService;->mP2pLinkManager:Lcom/android/nfc/P2pLinkManager;
-
-    invoke-virtual {v3, v4, v4}, Lcom/android/nfc/P2pLinkManager;->enableDisable(ZZ)V
 
     .line 1239
     :cond_2
@@ -1668,24 +1654,6 @@
     iget-object v5, v5, Lcom/android/nfc/NfcService;->mObjectMap:Ljava/util/HashMap;
 
     invoke-virtual {v5}, Ljava/util/HashMap;->clear()V
-
-    .line 1164
-    iget-object v5, p0, Lcom/android/nfc/NfcService$EnableDisableTask;->this$0:Lcom/android/nfc/NfcService;
-
-    iget-boolean v5, v5, Lcom/android/nfc/NfcService;->mIsBeamCapable:Z
-
-    if-eqz v5, :cond_9
-
-    .line 1165
-    iget-object v5, p0, Lcom/android/nfc/NfcService$EnableDisableTask;->this$0:Lcom/android/nfc/NfcService;
-
-    iget-object v5, v5, Lcom/android/nfc/NfcService;->mP2pLinkManager:Lcom/android/nfc/P2pLinkManager;
-
-    iget-object v7, p0, Lcom/android/nfc/NfcService$EnableDisableTask;->this$0:Lcom/android/nfc/NfcService;
-
-    iget-boolean v7, v7, Lcom/android/nfc/NfcService;->mIsNdefPushEnabled:Z
-
-    invoke-virtual {v5, v7, v2}, Lcom/android/nfc/P2pLinkManager;->enableDisable(ZZ)V
 
     .line 1167
     :cond_9
