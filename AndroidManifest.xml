@@ -58,21 +58,6 @@
         <activity android:clearTaskOnLaunch="true" android:excludeFromRecents="true" android:finishOnCloseSystemDialogs="true" android:multiprocess="true" android:name="com.android.nfc.cardemulation.TapAgainDialog"/>
         <activity android:excludeFromRecents="true" android:name="com.android.nfc.NfcRootActivity" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:finishOnCloseSystemDialogs="true" android:name="com.android.nfc.handover.ConfirmConnectActivity" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-        <activity android:excludeFromRecents="true" android:exported="true" android:finishOnCloseSystemDialogs="true" android:label="@string/android_beam" android:name="com.android.nfc.BeamShareActivity" android:noHistory="true" android:theme="@android:style/Theme.Translucent">
-            <intent-filter>
-                <action android:name="android.intent.action.SEND"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data android:mimeType="*/*"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.SEND_MULTIPLE"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data android:mimeType="*/*"/>
-            </intent-filter>
-        </activity>
-        <activity android:excludeFromRecents="true" android:finishOnCloseSystemDialogs="true" android:name="com.android.nfc.ConfirmConnectToWifiNetworkActivity" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-        <service android:name="com.android.nfc.beam.BeamSendService" android:process=":beam"/>
-        <service android:name="com.android.nfc.beam.BeamReceiveService" android:process=":beam"/>
         <receiver android:exported="true" android:name="com.android.nfc.NfcBootCompletedReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
