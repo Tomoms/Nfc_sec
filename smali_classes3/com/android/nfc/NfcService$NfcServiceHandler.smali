@@ -2980,15 +2980,6 @@
     .line 3239
     .end local v0    # "fieldOnIntent":Landroid/content/Intent;
     :pswitch_c
-    iget-object v0, v1, Lcom/android/nfc/NfcService$NfcServiceHandler;->this$0:Lcom/android/nfc/NfcService;
-
-    iget-object v0, v0, Lcom/android/nfc/NfcService;->mP2pLinkManager:Lcom/android/nfc/P2pLinkManager;
-
-    iget-object v3, v2, Landroid/os/Message;->obj:Ljava/lang/Object;
-
-    check-cast v3, Landroid/nfc/BeamShareData;
-
-    invoke-virtual {v0, v3}, Lcom/android/nfc/P2pLinkManager;->onManualBeamInvoke(Landroid/nfc/BeamShareData;)V
 
     .line 3240
     goto/16 :goto_7
